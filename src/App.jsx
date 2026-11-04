@@ -55,8 +55,8 @@ export default function App() {
     avatarImage,
     carImage,
     phones: [
-      "+639172429857",
-      "+639081647499"
+      "09172429857",
+      "09081647499"
     ],
     location: "2600, Baguio City, Benguet, Philippines",
     company: "MAHALO",
