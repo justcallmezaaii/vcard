@@ -209,7 +209,7 @@ END:VCARD`;
         <div className="px-4 -mt-6 pb-8 space-y-4 flex-1 z-10">
 
           {/* 1. Contact Card */}
-          <div className="bg-white rounded-4xl border border-slate-100 shadow-sm overflow-hidden transition-all">
+          <div className="bg-white rounded-4xl border border-slate-100 shadow-sm overflow-hidden transition-all text-left">
             <button 
               onClick={() => toggleSection('contact')}
               className="w-full p-4 flex items-center justify-between hover:bg-slate-50 transition-colors"
@@ -257,7 +257,7 @@ END:VCARD`;
           </div>
 
           {/* 2. Company Card */}
-          <div className="bg-white rounded-4xl border border-slate-100 shadow-sm overflow-hidden transition-all">
+          <div className="bg-white rounded-4xl border border-slate-100 shadow-sm overflow-hidden transition-all text-left">
             <button 
               onClick={() => toggleSection('company')}
               className="w-full p-4 flex items-center justify-between hover:bg-slate-50 transition-colors"
@@ -303,7 +303,7 @@ END:VCARD`;
           </div>
 
           {/* 3. Summary Card */}
-          <div className="bg-white rounded-4xl border border-slate-100 shadow-sm overflow-hidden transition-all">
+          <div className="bg-white rounded-4xl border border-slate-100 shadow-sm overflow-hidden transition-all text-left">
             <button 
               onClick={() => toggleSection('summary')}
               className="w-full p-4 flex items-center justify-between hover:bg-slate-50 transition-colors"
