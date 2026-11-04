@@ -156,10 +156,10 @@ END:VCARD`;
       )}
 
       {/* Main Card View */}
-      <div className="w-full max-w-md bg-white sm:rounded-4xl shadow-xl overflow-hidden min-h-screen sm:min-h-[750px] flex flex-col my-auto relative border border-slate-200">
+      <div className="w-full max-w-md min-w-0 bg-white sm:rounded-4xl shadow-xl overflow-hidden min-h-screen sm:min-h-[750px] flex flex-col my-auto relative border border-slate-200">
         
         {/* Top Dark Section (#353833) */}
-        <div className="bg-[#353833] text-white pt-10 pb-14 px-6 relative flex flex-col items-center text-center rounded-b-4xl shadow-md">
+        <div className="bg-[#353833] text-white pt-16 sm:pt-10 pb-14 px-4 sm:px-6 relative flex flex-col items-center text-center rounded-b-4xl shadow-md">
           
           <div className="absolute top-4 right-4 flex gap-2">
             <button 
@@ -206,7 +206,7 @@ END:VCARD`;
         </div>
 
         {/* Details Content */}
-        <div className="px-4 -mt-6 pb-8 space-y-4 flex-1 z-10">
+        <div className="px-3 sm:px-4 -mt-6 pb-8 space-y-4 flex-1 z-10">
 
           {/* 1. Contact Card */}
           <div className="bg-white rounded-4xl border border-slate-100 shadow-sm overflow-hidden transition-all text-left">
@@ -230,9 +230,9 @@ END:VCARD`;
                     <div className="p-2 bg-slate-50 text-slate-500 rounded-4xl mt-0.5">
                       <Phone className="w-3.5 h-3.5" />
                     </div>
-                    <div className="flex-1">
+                    <div className="min-w-0 flex-1">
                       <p className="text-xs text-slate-400 font-medium">Mobile</p>
-                      <a href={`tel:${phone}`} className="text-sm font-semibold text-[#353833] hover:underline">
+                      <a href={`tel:${phone}`} className="text-sm font-semibold text-[#353833] hover:underline break-words">
                         {phone}
                       </a>
                     </div>
@@ -245,9 +245,9 @@ END:VCARD`;
                   <div className="p-2 bg-slate-50 text-slate-500 rounded-4xl mt-0.5">
                     <MapPin className="w-3.5 h-3.5" />
                   </div>
-                  <div className="flex-1">
+                  <div className="min-w-0 flex-1">
                     <p className="text-xs text-slate-400 font-medium">Location:</p>
-                    <p className="text-sm font-semibold text-[#353833] leading-snug">
+                    <p className="text-sm font-semibold text-[#353833] leading-snug break-words">
                       {contactData.location}
                     </p>
                   </div>
@@ -277,9 +277,9 @@ END:VCARD`;
                   <div className="p-2 bg-slate-50 text-slate-500 rounded-4xl mt-0.5">
                     <Building2 className="w-3.5 h-3.5" />
                   </div>
-                  <div className="flex-1">
+                  <div className="min-w-0 flex-1">
                     <p className="text-xs text-slate-400 font-medium">Company:</p>
-                    <p className="text-sm font-bold text-[#353833]">
+                    <p className="text-sm font-bold text-[#353833] break-words">
                       {contactData.company}
                     </p>
                   </div>
@@ -291,9 +291,9 @@ END:VCARD`;
                   <div className="p-2 bg-slate-50 text-slate-500 rounded-4xl mt-0.5">
                     <Briefcase className="w-3.5 h-3.5" />
                   </div>
-                  <div className="flex-1">
+                  <div className="min-w-0 flex-1">
                     <p className="text-xs text-slate-400 font-medium">Title:</p>
-                    <p className="text-sm font-semibold text-[#353833]">
+                    <p className="text-sm font-semibold text-[#353833] break-words">
                       {contactData.title}
                     </p>
                   </div>
